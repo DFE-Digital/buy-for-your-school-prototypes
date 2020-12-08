@@ -26,20 +26,20 @@
           <fieldset class="govuk-fieldset">
             <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
               <h1 class="govuk-fieldset__heading">
-                What type of school is {{data['school-name']}}?
+                Is {{data['school-name']}} part of a multi-academy trust?
               </h1>
             </legend>
             <div class="govuk-radios">
               <div class="govuk-radios__item">
-                <input class="govuk-radios__input" id="type-of-school" name="type-of-school" type="radio" value="single school">
+                <input class="govuk-radios__input" id="type-of-school" name="type-of-school" type="radio" value="yes">
                 <label class="govuk-label govuk-radios__label" for="type-of-school">
-                  Single school
+                  Yes
                 </label>
               </div>
               <div class="govuk-radios__item">
-                <input class="govuk-radios__input" id="type-of-school-2" name="type-of-school" type="radio" value="multi-school">
+                <input class="govuk-radios__input" id="type-of-school-2" name="type-of-school" type="radio" value="no">
                 <label class="govuk-label govuk-radios__label" for="type-of-school-2">
-                  Multi-school
+                  No
                 </label>
               </div>
 
@@ -56,7 +56,7 @@
             </span>
           </summary>
           <div class="govuk-details__text">
-            If the school that you are creating a specification for belongs to a group of schools, you should select multi-school. Otherwise select single school.
+            If the school that you are creating a specification for belongs to a single academy trust, select No.
           </div>
         </details>
 
