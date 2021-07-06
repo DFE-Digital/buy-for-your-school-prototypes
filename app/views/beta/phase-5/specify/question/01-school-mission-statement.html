@@ -1,0 +1,53 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Create a new specification
+{% endblock %}
+
+{% block beforeContent %}
+{{ govukPhaseBanner({
+  tag: {
+    text: "prototype"
+  },
+  html: 'This is not a real service.'
+}) }}
+  {{ govukBackLink({
+    text: "Back",
+    href: " ../create-specification"
+  }) }}
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <form class="new_answer" id="new_answer" action="" accept-charset="UTF-8" method="post"><input type="hidden" name="mission-statement">
+        <input type="hidden" name="answer[response]" id="answer_response">
+        <div class="govuk-form-group">
+          <fieldset class="govuk-fieldset">
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">Does your school have a mission statement?</legend>
+            <div class="govuk-radios" data-module="govuk-radios">
+              <div class="govuk-hint">
+                <p>Suppliers will use this to assess how well they are aligned to the school's vision for a healthy partnership.</p>
+              </div>
+              <div class="govuk-radios__item">
+                <input id="answer-response-yes-field" class="govuk-radios__input" type="radio" value="Yes" name="answer[response]" aria-controls="answer-response-yes-conditional" aria-expanded="false">
+                <label for="answer-response-yes-field" class="govuk-label govuk-radios__label">Yes</label>
+              </div>
+              <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="answer-response-yes-conditional">
+                <div class="govuk-form-group">
+                  <label for="answer-yes-further-information-field" class="govuk-label">What is your school's mission statement?</label>
+                  <textarea id="answer-yes-further-information-field" class="govuk-textarea" rows="6" name="answer[yes_further_information]"></textarea>
+                </div>
+              </div>
+              <div class="govuk-radios__item">
+                <input id="answer-response-no-field" class="govuk-radios__input" type="radio" value="No" name="answer[response]">
+                <label for="answer-response-no-field" class="govuk-label govuk-radios__label">No</label>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+        <input type="submit" name="commit" value="Continue" class="govuk-button" data-disable-with="Continue">
+      </form>
+    </div>
+  </div>
+{% endblock %}

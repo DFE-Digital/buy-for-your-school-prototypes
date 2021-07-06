@@ -1,0 +1,150 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Dashboard
+{% endblock %}
+
+{% block beforeContent %}
+  {{ govukPhaseBanner({
+    tag: {
+      text: "prototype"
+    },
+    html: 'This is not a real service.'
+  }) }}
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <h1 class="govuk-heading-l govuk-!-margin-bottom-3">Matching frameworks</h1>
+    <p class="govuk-body-l govuk-!-margin-bottom-6">Based on your answers, there are multiple approved frameworks to choose from.</p>
+      <dl class="card">
+        <a href="/find/type/on-going/services-categories/facilities/fm-categories/catering/fm-support-service"></a>
+        <div class="card__header">
+          <dt class="govuk-visually-hidden">Framework name:</dt>
+          <dd class="card__title">Building in use - support services</dd>
+        </div>
+        <div class="card__content">
+          <dt>Provider:</dt>
+          <dd>YPO</dd>
+        </div>
+      </dl>
+
+      <dl class="card">
+        <a href="/find/type/on-going/services-categories/facilities/fm-categories/catering/catering-espo"></a>
+        <div class="card__header">
+          <dt class="govuk-visually-hidden">Framework name:</dt>
+          <dd class="card__title">Catering services</dd>
+        </div>
+        <div class="card__content">
+          <dt>Provider:</dt>
+          <dd>ESPO</dd>
+        </div>
+      </dl>
+    
+      <dl class="card">
+        <a href="/find/type/on-going/services-categories/facilities/fm-categories/catering/catering-cpc"></a>
+        <div class="card__header">
+          <dt class="govuk-visually-hidden">Framework name:</dt>
+          <dd class="card__title">Outsourced catering services </dd>
+        </div>
+        <div class="card__content">
+          <dt>Provider:</dt>
+          <dd>CPC</dd>
+        </div>
+      </dl>
+    
+      <dl class="card">
+        <a href="/find/type/on-going/services-categories/facilities/fm-categories/catering/catering-equipment"></a>
+        <div class="card__header">
+          <dt class="govuk-visually-hidden">Framework name:</dt>
+          <dd class="card__title">Commercial catering equipment</dd>
+        </div>
+        <div class="card__content">
+          <dt>Provider:</dt>
+          <dd>ESPO</dd>
+        </div>
+      </dl>
+    
+
+    
+  <div class="summary">
+    <h2 class="govuk-heading-m govuk-!-margin-top-9">Previous answers</h2>
+    <a href="/find" class="start-again govuk-link govuk-body-m">Start again</a>
+    
+
+
+  
+
+  
+
+  
+<dl class="govuk-summary-list govuk-!-margin-bottom-9">
+  
+    
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          What are you buying?
+        </dt>
+        <dd class="govuk-summary-list__value">
+          Services
+        </dd>
+        
+          <dd class="govuk-summary-list__actions">
+            
+              <a class="govuk-link" href="/find/type">
+                Change<span class="govuk-visually-hidden"> What are you buying?</span>
+                </a>
+            
+          </dd>
+        
+      </div>
+    
+  
+    
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          What services do you need?
+        </dt>
+        <dd class="govuk-summary-list__value">
+          Facilities management and estates
+        </dd>
+        
+          <dd class="govuk-summary-list__actions">
+            
+              <a class="govuk-link" href="/find/type/on-going/services-categories">
+                Change<span class="govuk-visually-hidden"> What services do you need?</span>
+                </a>
+            
+          </dd>
+        
+      </div>
+    
+  
+    
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          What services are you looking for in facilities management and estates?
+        </dt>
+        <dd class="govuk-summary-list__value">
+          Catering
+        </dd>
+        
+          <dd class="govuk-summary-list__actions">
+            
+              <a class="govuk-link" href="/find/type/on-going/services-categories/facilities/fm-categories">
+                Change<span class="govuk-visually-hidden"> What services are you looking for in facilities management and estates?</span>
+                </a>
+            
+          </dd>
+        
+      </div>
+    
+  
+</dl>
+
+  </div>
+
+  </div>
+  </div>
+{% endblock %}

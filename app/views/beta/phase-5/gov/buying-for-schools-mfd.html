@@ -1,0 +1,193 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Dashboard
+{% endblock %}
+
+{% block beforeContent %}
+  {{ govukPhaseBanner({
+    tag: {
+      text: "prototype"
+    },
+    html: 'This is not a real service.'
+  }) }}
+{% endblock %}
+
+
+
+{% block content %}
+<div class="govuk-grid-row manual-header">
+  <div class="govuk-grid-column-two-thirds">
+    <h1 class="govuk-heading-m">Buying for schools</h1>
+    <p>
+      From: <a href="">Department for Education</a><br>
+      Published 2 February 2016</br>
+      Updated: 11 June 2021, <a href="">see all updates</a>
+    </p>
+  </div>
+</div>
+
+<div class="govuk-grid-row" style="padding-left: 15px; padding-right: 15px">
+  <div class="govuk-grid-column-two-thirds">
+    {{ govukBreadcrumbs({
+      items: [
+        {
+          text: "Contents",
+          href: "#"
+        }
+      ]
+    }) }}
+    <hr>
+    <h2 class="govuk-heading-m">Multi-functional devices (MFD) and printing</h2>
+    <p>Find the right way to buy multi-functional devices (MFD) and printing services for your school</p>
+
+    <div>
+      <div style="background-color: #f3f2f1; padding: 2em; margin: 2em 0; margin-top: 0;">
+        <p style="margin-bottom: 0;">See if you can buy through a <a href="">DfE-approved multi-functional devices (MFDs) framework.</a></p>
+      </div>
+      <p>See where to <a href="https://www.gov.uk/guidance/buying-for-schools/get-help-with-buying-for-schools">get help with buying for schools</a> if you need it.</p>  
+    </div>
+
+    <!-- BUTCHERED GOV ACCORDION -->
+
+    <div class="gem-c-accordion govuk-accordion gem-c-accordion--active" data-module="govuk-accordion" id="accordion-default">
+      <div class="govuk-accordion__section gem-c-accordion__section">
+        <div class="govuk-accordion__section-header gem-c-accordion__section-header" style="padding:0">
+          <h2 class="govuk-accordion__section-heading gem-c-accordion__section-heading">
+            <span class="govuk-accordion__section-button gem-c-accordion__section-button" id="accordion-default-heading-1">
+              Before you start
+              <span class="govuk-visually-hidden">, </span><span class="gem-c-accordion__toggle-link js-toggle-link"><span class="gem-c-accordion__toggle-text">Show</span><span class="gem-c-accordion-nav__chevron gem-c-accordion-nav__chevron--down"></span></span><span class="govuk-visually-hidden"> this section</span>
+            </span>
+          </h2>
+        </div>
+        <div id="accordion-default-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
+          <h2 class="govuk-heading-m">Planning and scope</h2>
+          <p>You’ll need to know:</p>
+          <ul class="govuk-list govuk-list--bullet">
+            <li>what your strategic objectives are, for example, reducing spend, productivity improvements, or meeting learning or sustainability targets</li>
+            <li>your school’s existing organisational structure, including the number of buildings and locations you have</li>
+            <li>your school’s likely future organisational structure so you can plan what you need for the longer term</li>
+            <li>what printing assets are in your project scope (like MFDs, desktop printers, faxes, scanners), including an audit of:
+              <ul class="govuk-list govuk-list--bullet">
+                <li>the number of assets you have</li>
+                <li>the type, model or make of your assets</li>
+                <li>the current cost and location of your assets</li>
+                <li>what existing lease agreements, including expiry dates, break-fix contacts, desktop services you already have</li>
+                <li>your annual print volumes</li>
+                <li>your current spend across all printing services</li>
+              </ul>          
+            </li>
+          </ul>
+          <p>Having this information is useful because changing your printing services can take longer than you think and will help you to:</p>
+          <ul class="govuk-list govuk-list--bullet">
+            <li>buy the right printing services for your school’s needs</li>
+            <li>make dealing with suppliers easier</li>
+            <li>get better deals from suppliers</li>
+            <li>meet your school’s learning and financial objectives</li>
+            <li>anticipate long term changes</li>
+          </ul>
+
+          <h2 class="govuk-heading-m">Specifications</h2>
+          <p>You’ll need to tell suppliers what software, hardware and network infrastructure you have so suppliers can advise you properly and give you accurate costings and timescales.</p>
+          <p>You’ll also need to think about any planned changes to your school or trust’s organisational structure which may affect future needs as well as the implementation period.</p>
+
+          <h2 class="govuk-heading-m">People
+          <p>If you’re making big changes, you’ll need to involve the right teaching, buying and technical teams.</p>
+          <p>For example, procurement and ICT will need to be involved in the planning and implementation phases and teaching staff will need training on how to use any new equipment.</p>
+          <p>You should consider getting a high-level sponsor if you need to make changes across your organisational structure.</p>
+          <p>For bigger projects, it may be easier to have a dedicated person who can act as project manager so you can coordinate work, budgets and costs.</p>
+        </div>
+      </div>
+      <div class="govuk-accordion__section gem-c-accordion__section">
+        <div class="govuk-accordion__section-header gem-c-accordion__section-header" style="padding:0">
+          <h2 class="govuk-accordion__section-heading gem-c-accordion__section-heading">
+            <span class="govuk-accordion__section-button gem-c-accordion__section-button" id="accordion-default-heading-2">
+              Features and services
+              <span class="govuk-visually-hidden">, </span><span class="gem-c-accordion__toggle-link js-toggle-link"><span class="gem-c-accordion__toggle-text">Show</span><span class="gem-c-accordion-nav__chevron gem-c-accordion-nav__chevron--down"></span></span><span class="govuk-visually-hidden"> this section</span>
+            </span>
+          </h2>
+        </div>
+        <div id="accordion-default-content-2" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-2">
+          <p>Think about whether you need your MFDs to:</p>
+          <ul class="govuk-list govuk-list--bullet">
+            <li>be standalone or connected to a network
+            <li>print large volumes of paper or at speed to avoid large print queues
+            <li>print in colour
+            <li>fax, scan and email
+            <li>collate, hole-punch and staple paper
+            <li>have advanced features such as printing double-sided or on different sizes and types of paper
+            <li>have password protection and monitor use
+          </ul>
+          <div style="border-left: 10px solid #b1b4b6; padding: 1em 0 1em 1em; margin: 2em 0;">
+            <h2 class="govuk-heading-m">Example</h2>
+            <p>Buying several lower specification MFDs in some cases might be cheaper than one advanced model. You won’t pay for features you don’t need and you’ll still have access to printing services if there’s a fault with one machine.</p>
+          </div>
+          <h2 class="govuk-heading-m">Running and maintenance costs</h2>
+          <p>Check:</p>
+          <ul class="govuk-list govuk-list--bullet">
+            <li>how much you’ll be charged for black and white copies and colour copies (some suppliers offer better rates if you print mostly in black and white or colour)</li>
+            <li>the standing charge or minimum monthly page use is realistic</li>
+            <li>what your maintenance fee is and whether it’s fixed or variable</li>
+            <li>what level of maintenance support you’ll get, including fault reporting, turnaround times and who’s responsible for fixing faults</li>
+          </ul>      
+        </div>
+      </div>
+      <div class="govuk-accordion__section gem-c-accordion__section">
+        <div class="govuk-accordion__section-header gem-c-accordion__section-header" style="padding:0">
+          <h2 class="govuk-accordion__section-heading gem-c-accordion__section-heading">
+            <span class="govuk-accordion__section-button gem-c-accordion__section-button" id="accordion-default-heading-3">
+              Buying or leasing
+              <span class="govuk-visually-hidden">, </span><span class="gem-c-accordion__toggle-link js-toggle-link"><span class="gem-c-accordion__toggle-text">Show</span><span class="gem-c-accordion-nav__chevron gem-c-accordion-nav__chevron--down"></span></span><span class="govuk-visually-hidden"> this section</span>
+            </span>
+          </h2>
+        </div>
+        <div id="accordion-default-content-3" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-3">
+          <p><a href="">Planning what you need to buy</a> might help you decide whether to buy or lease.</p>
+          <p>Whether you choose to buy or lease, you can only enter into an operating lease. Financial leases are borrowing and unlawful, and are often poor value so make sure you always <a href="">follow your school’s procurement rules.</a></p>
+          <p>Using a <a href="">DfE-approved multi-functional devices (MFDs) framework</a> can help you find the best deals.</p>
+          <p>Buying outright might:</p>
+          <ul class="govuk-list govuk-list--bullet">
+            <li>be cheaper in the long run, avoiding ongoing leasing costs</li>
+            <li>simpler, avoiding the leasing application process and financial checks</li>
+            <li>give you more control over devices, how you use them and what maintenance you’re required to do</li>
+            <li>mean you can sell if you no longer use it and upgrade</li>
+          </ul>
+          <h2 class="govuk-heading-m">Leasing might allow you to:
+          <ul class="govuk-list govuk-list--bullet">
+            <li>lower your upfront costs (leasing rarely involves big initial payments)</li>
+            <li>upgrade to the latest technology more easily without the financial commitment of buying</li>
+            <li>budget more easily as you know what you’ll be paying each month and not losing money through depreciation</li>
+          </ul>
+          <p>If you do lease MFDs, check the cancellation policy as you may need to give more than 30 days’ notice in order to cancel.</p>
+        </div>
+      </div>
+      <div class="govuk-accordion__section gem-c-accordion__section">
+        <div class="govuk-accordion__section-header gem-c-accordion__section-header" style="padding:0">
+          <h2 class="govuk-accordion__section-heading gem-c-accordion__section-heading">
+            <span class="govuk-accordion__section-button gem-c-accordion__section-button" id="accordion-default-heading-4">
+              Find the right way to buy
+              <span class="govuk-visually-hidden">, </span><span class="gem-c-accordion__toggle-link js-toggle-link"><span class="gem-c-accordion__toggle-text">Show</span><span class="gem-c-accordion-nav__chevron gem-c-accordion-nav__chevron--down"></span></span><span class="govuk-visually-hidden"> this section</span>
+            </span>
+          </h2>
+        </div>
+        <div id="accordion-default-content-4" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-4">
+          <p>Buying from a framework is usually quicker and easier than getting bids or quotes because the agreements:</p>
+          <ul class="govuk-list govuk-list--bullet">
+            <li>have already been through a full competitive tender process</li>
+            <li>have been quality checked</li>
+            <li>are checked to make sure they comply with the law</li>
+          </ul>
+
+          <div>
+            <div style="background-color: #f3f2f1; padding: 2em; margin: 2em 0; margin-top: 0;">
+              <p style="margin-bottom: 0;">See if you can buy through a <a href="">DfE-approved multi-functional devices (MFDs) framework.</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+{% endblock %}

@@ -1,0 +1,225 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Create a new specification
+{% endblock %}
+
+{% block beforeContent %}
+{{ govukPhaseBanner({
+  tag: {
+    text: "prototype"
+  },
+  html: 'This is not a real service.'
+}) }}
+  {{ govukBackLink({
+    text: "Back",
+    href: "dashboard"
+  }) }}
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full-width">
+
+      <h1 class="govuk-heading-xl">
+        Create a specification to procure a catering service for your school
+      </h1>
+
+      <ol class="app-task-list sections">
+    <h2 class="app-task-list__section">Catering procurement objectives</h2>
+    <li>
+      <ul class="app-task-list__items">
+              <li class="app-task-list__item step__item" id="b0fd7366-604f-4c03-b55a-f73e80a8e846">
+                  <span class="app-task-list__task-name">
+                    <a class="govuk-link" aria-describedby="b0fd7366-604f-4c03-b55a-f73e80a8e846-status" href="question/01-school-mission-statement">Add your school's mission statement</a>
+                  </span>
+                  <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="b0fd7366-604f-4c03-b55a-f73e80a8e846-status">
+                    Not started
+                  </strong>
+              </li>
+              <li class="app-task-list__item step__item" id="38d77efd-cd06-40eb-984c-70d9b3016970">
+                  <span class="app-task-list__task-name">
+                    <a class="govuk-link" aria-describedby="38d77efd-cd06-40eb-984c-70d9b3016970-status" href="/journeys/f8bd718f-95b6-4fb1-879c-85a3a429d2da/steps/38d77efd-cd06-40eb-984c-70d9b3016970">Share whether your school has a food policy</a>
+                  </span>
+                  <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="38d77efd-cd06-40eb-984c-70d9b3016970-status">
+                    Not started
+                  </strong>
+              </li>
+            <li class="app-task-list__item task__item" id="69ebc9c4-eca9-4096-a6cf-3787dc324532">
+              <span class="app-task-list__task-name">
+                <a class="govuk-link" aria-describedby="69ebc9c4-eca9-4096-a6cf-3787dc324532-status" href="/journeys/f8bd718f-95b6-4fb1-879c-85a3a429d2da/tasks/69ebc9c4-eca9-4096-a6cf-3787dc324532">Describe your goals for this procurement</a>
+              </span>
+                <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="69ebc9c4-eca9-4096-a6cf-3787dc324532-status">
+                  Not started
+                </strong>
+            </li>
+      </ul>
+    </li>
+    <h2 class="app-task-list__section">Social value</h2>
+    <li>
+      <ul class="app-task-list__items">
+              <li class="app-task-list__item step__item" id="8058836d-c7b4-4ba5-9d78-b0b69f2202a7">
+                  <span class="app-task-list__task-name">
+                    <a class="govuk-link" aria-describedby="8058836d-c7b4-4ba5-9d78-b0b69f2202a7-status" href="/journeys/f8bd718f-95b6-4fb1-879c-85a3a429d2da/steps/8058836d-c7b4-4ba5-9d78-b0b69f2202a7">Share whether you have an environmental sustainability policy</a>
+                  </span>
+                  <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="8058836d-c7b4-4ba5-9d78-b0b69f2202a7-status">
+                    Not started
+                  </strong>
+              </li>
+              <li class="app-task-list__item step__item" id="6412b45a-26dd-4c00-a84b-072e3cd15afb">
+                  <span class="app-task-list__task-name">
+                    <a class="govuk-link" aria-describedby="6412b45a-26dd-4c00-a84b-072e3cd15afb-status" href="/journeys/f8bd718f-95b6-4fb1-879c-85a3a429d2da/steps/6412b45a-26dd-4c00-a84b-072e3cd15afb">Specify if you need any modern slavery assurances</a>
+                  </span>
+                  <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="6412b45a-26dd-4c00-a84b-072e3cd15afb-status">
+                    Not started
+                  </strong>
+              </li>
+            <li class="app-task-list__item task__item" id="c4f45ca6-b9f3-47d0-b0ec-ec79d6983fc5">
+              <span class="app-task-list__task-name">
+                <a class="govuk-link" aria-describedby="c4f45ca6-b9f3-47d0-b0ec-ec79d6983fc5-status" href="/journeys/f8bd718f-95b6-4fb1-879c-85a3a429d2da/tasks/c4f45ca6-b9f3-47d0-b0ec-ec79d6983fc5">Add any other social value requirements</a>
+              </span>
+                <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="c4f45ca6-b9f3-47d0-b0ec-ec79d6983fc5-status">
+                  Not started
+                </strong>
+            </li>
+      </ul>
+    </li>
+    <h2 class="app-task-list__section">Contract management</h2>
+    <li>
+      <ul class="app-task-list__items">
+            <li class="app-task-list__item task__item" id="09055bcf-3c5d-41ae-8812-4fd38887adf8">
+              <span class="app-task-list__task-name">
+                <a class="govuk-link" aria-describedby="09055bcf-3c5d-41ae-8812-4fd38887adf8-status" href="/journeys/f8bd718f-95b6-4fb1-879c-85a3a429d2da/tasks/09055bcf-3c5d-41ae-8812-4fd38887adf8">Describe your requirements for service and contract review</a>
+              </span>
+                <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="09055bcf-3c5d-41ae-8812-4fd38887adf8-status">
+                  Not started
+                </strong>
+            </li>
+              <li class="app-task-list__item step__item" id="68fbee95-ec99-4704-914d-62553d9efd20">
+                  <span class="app-task-list__task-name">
+                    <a class="govuk-link" aria-describedby="68fbee95-ec99-4704-914d-62553d9efd20-status" href="/journeys/f8bd718f-95b6-4fb1-879c-85a3a429d2da/steps/68fbee95-ec99-4704-914d-62553d9efd20">Specify whether you'll pay for unsold meals</a>
+                  </span>
+                  <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="68fbee95-ec99-4704-914d-62553d9efd20-status">
+                    Not started
+                  </strong>
+              </li>
+            <li class="app-task-list__item task__item" id="bb47a1ab-8570-43bf-9a9c-302f715b5750">
+              <span class="app-task-list__task-name">
+                <a class="govuk-link" aria-describedby="bb47a1ab-8570-43bf-9a9c-302f715b5750-status" href="/journeys/f8bd718f-95b6-4fb1-879c-85a3a429d2da/tasks/bb47a1ab-8570-43bf-9a9c-302f715b5750">Specify any overheads the supplier will pay for or manage</a>
+              </span>
+                <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="bb47a1ab-8570-43bf-9a9c-302f715b5750-status">
+                  Not started
+                </strong>
+            </li>
+            <li class="app-task-list__item task__item" id="c4453aad-3405-4be6-adc8-f1dd2f3e1d4b">
+              <span class="app-task-list__task-name">
+                <a class="govuk-link" aria-describedby="c4453aad-3405-4be6-adc8-f1dd2f3e1d4b-status" href="/journeys/f8bd718f-95b6-4fb1-879c-85a3a429d2da/tasks/c4453aad-3405-4be6-adc8-f1dd2f3e1d4b">Add details and requirements for staff</a>
+              </span>
+                <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="c4453aad-3405-4be6-adc8-f1dd2f3e1d4b-status">
+                  Not started
+                </strong>
+            </li>
+      </ul>
+    </li>
+    <h2 class="app-task-list__section">Service parameters</h2>
+    <li>
+      <ul class="app-task-list__items">
+            <li class="app-task-list__item task__item" id="035d762e-5f45-49fb-932e-61a9cb473956">
+              <span class="app-task-list__task-name">
+                <a class="govuk-link" aria-describedby="035d762e-5f45-49fb-932e-61a9cb473956-status" href="/journeys/f8bd718f-95b6-4fb1-879c-85a3a429d2da/tasks/035d762e-5f45-49fb-932e-61a9cb473956">Add the key service dates</a>
+              </span>
+                <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="035d762e-5f45-49fb-932e-61a9cb473956-status">
+                  Not started
+                </strong>
+            </li>
+            <li class="app-task-list__item task__item" id="3dcc79f6-3d9b-4f6e-b122-a766b2290064">
+              <span class="app-task-list__task-name">
+                <a class="govuk-link" aria-describedby="3dcc79f6-3d9b-4f6e-b122-a766b2290064-status" href="/journeys/f8bd718f-95b6-4fb1-879c-85a3a429d2da/tasks/3dcc79f6-3d9b-4f6e-b122-a766b2290064">Add pupil and staff numbers</a>
+              </span>
+                <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="3dcc79f6-3d9b-4f6e-b122-a766b2290064-status">
+                  Not started
+                </strong>
+            </li>
+            <li class="app-task-list__item task__item" id="8ef15829-acb1-46fc-9188-4eef5f3c1620">
+              <span class="app-task-list__task-name">
+                <a class="govuk-link" aria-describedby="8ef15829-acb1-46fc-9188-4eef5f3c1620-status" href="/journeys/f8bd718f-95b6-4fb1-879c-85a3a429d2da/tasks/8ef15829-acb1-46fc-9188-4eef5f3c1620">Give details about your everyday catering services</a>
+              </span>
+                <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="8ef15829-acb1-46fc-9188-4eef5f3c1620-status">
+                  Not started
+                </strong>
+            </li>
+            <li class="app-task-list__item task__item" id="f1a6faa8-86a3-4cae-bb2a-48de4c3c52f0">
+              <span class="app-task-list__task-name">
+                <a class="govuk-link" aria-describedby="f1a6faa8-86a3-4cae-bb2a-48de4c3c52f0-status" href="/journeys/f8bd718f-95b6-4fb1-879c-85a3a429d2da/tasks/f1a6faa8-86a3-4cae-bb2a-48de4c3c52f0">Specify which occasional services you need</a>
+              </span>
+                <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="f1a6faa8-86a3-4cae-bb2a-48de4c3c52f0-status">
+                  Not started
+                </strong>
+            </li>
+      </ul>
+    </li>
+    <h2 class="app-task-list__section">Menus and ordering</h2>
+    <li>
+      <ul class="app-task-list__items">
+            <li class="app-task-list__item task__item" id="3ed15c1a-7903-4cae-9e5f-927a4ff85434">
+              <span class="app-task-list__task-name">
+                <a class="govuk-link" aria-describedby="3ed15c1a-7903-4cae-9e5f-927a4ff85434-status" href="/journeys/f8bd718f-95b6-4fb1-879c-85a3a429d2da/tasks/3ed15c1a-7903-4cae-9e5f-927a4ff85434">Describe your requirements for the food served</a>
+              </span>
+                <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="3ed15c1a-7903-4cae-9e5f-927a4ff85434-status">
+                  Not started
+                </strong>
+            </li>
+              <li class="app-task-list__item step__item" id="d249dbe9-08bc-4741-bbef-3e0880db729d">
+                  <span class="app-task-list__task-name">
+                    <a class="govuk-link" aria-describedby="d249dbe9-08bc-4741-bbef-3e0880db729d-status" href="/journeys/f8bd718f-95b6-4fb1-879c-85a3a429d2da/steps/d249dbe9-08bc-4741-bbef-3e0880db729d">Add details and requirements for pre-ordering</a>
+                  </span>
+                  <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="d249dbe9-08bc-4741-bbef-3e0880db729d-status">
+                    Not started
+                  </strong>
+              </li>
+            <li class="app-task-list__item task__item" id="3e4e984a-2204-4868-8975-c922265d3cfb">
+              <span class="app-task-list__task-name">
+                <a class="govuk-link" aria-describedby="3e4e984a-2204-4868-8975-c922265d3cfb-status" href="/journeys/f8bd718f-95b6-4fb1-879c-85a3a429d2da/tasks/3e4e984a-2204-4868-8975-c922265d3cfb"> Describe your payment systems</a>
+              </span>
+                <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="3e4e984a-2204-4868-8975-c922265d3cfb-status">
+                  Not started
+                </strong>
+            </li>
+      </ul>
+    </li>
+    <h2 class="app-task-list__section">Facilities</h2>
+    <li>
+      <ul class="app-task-list__items">
+            <li class="app-task-list__item task__item" id="2ec33ef6-b0ca-4b8f-883d-1c942336fe8b">
+              <span class="app-task-list__task-name">
+                <a class="govuk-link" aria-describedby="2ec33ef6-b0ca-4b8f-883d-1c942336fe8b-status" href="/journeys/f8bd718f-95b6-4fb1-879c-85a3a429d2da/tasks/2ec33ef6-b0ca-4b8f-883d-1c942336fe8b">Describe the kitchens and equipment available</a>
+              </span>
+                <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="2ec33ef6-b0ca-4b8f-883d-1c942336fe8b-status">
+                  Not started
+                </strong>
+            </li>
+            <li class="app-task-list__item task__item" id="ad17fa7a-4dcf-4e3e-b662-b8821340e99d">
+              <span class="app-task-list__task-name">
+                <a class="govuk-link" aria-describedby="ad17fa7a-4dcf-4e3e-b662-b8821340e99d-status" href="/journeys/f8bd718f-95b6-4fb1-879c-85a3a429d2da/tasks/ad17fa7a-4dcf-4e3e-b662-b8821340e99d">Describe the dining areas</a>
+              </span>
+                <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="ad17fa7a-4dcf-4e3e-b662-b8821340e99d-status">
+                  Not started
+                </strong>
+            </li>
+            <li class="app-task-list__item task__item" id="bd0f205d-a035-4237-b7e4-b5fb18317c80">
+              <span class="app-task-list__task-name">
+                <a class="govuk-link" aria-describedby="bd0f205d-a035-4237-b7e4-b5fb18317c80-status" href="/journeys/f8bd718f-95b6-4fb1-879c-85a3a429d2da/tasks/bd0f205d-a035-4237-b7e4-b5fb18317c80">Specify the supplier’s cleaning responsibilities</a>
+              </span>
+                <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="bd0f205d-a035-4237-b7e4-b5fb18317c80-status">
+                  Not started
+                </strong>
+            </li>
+      </ul>
+    </li>
+</ol>
+
+    </div>
+
+
+  </div>
+{% endblock %}

@@ -1,0 +1,148 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Dashboard
+{% endblock %}
+
+{% block beforeContent %}
+  {{ govukPhaseBanner({
+    tag: {
+      text: "prototype"
+    },
+    html: 'This is not a real service.'
+  }) }}
+{#
+  {{ govukBreadcrumbs({
+      items: [
+        {
+          text: "Home",
+          href: "#"
+        },
+        {
+          text: "Running a school or college",
+          href: "#"
+        }
+      ]
+    }) }}
+#}
+{% endblock %}
+
+
+
+{% block content %}
+
+
+<div class="govuk-grid-row manual-header">
+  <div class="govuk-grid-column-two-thirds">
+    <h1 class="govuk-heading-m">Buying for schools</h1>
+    <p>
+      From: <a href="">Department for Education</a><br>
+      Published 2 February 2016</br>
+      Updated: 11 June 2021, <a href="">see all updates</a>
+    </p>
+  </div>
+</div>
+
+<div class="govuk-grid-row" style="padding-left: 15px; padding-right: 15px">
+  <div class="govuk-grid-column-full-width">
+    {{ govukBreadcrumbs({
+      items: [
+        {
+          text: "Contents",
+          href: "#"
+        }
+      ]
+    }) }}
+    <hr>
+    <h2 class="govuk-heading-m">Resources for buying goods and services, and finding DfE-recommended suppliers.</h2>
+    <p>Follow these guides to help you plan what you need to buy and get good value.</p>
+    <p>Find quality-checked suppliers using the <a href="">find a framework tool.</a></p>
+    <p>There’s separate guidance on <a href="">buying procedures and procurement law</a> (including EU procurement law).</p>
+    <p>Managing your estate can be complicated, the guidance on <a href="">good estate management</a> provides comprehensive advice to help manage school buildings, land and all sizes of <a href="">construction projects.<a/></p>
+
+    <ul class="manual-list">
+      <li>
+        <a href="">
+          <span class="manual-list--title">Buying for schools during the coronavirus (COVID-19) outbreak</span><br>
+          <span class="manual-list--description">Information for buyers in schools and those who manage supplier contracts, including free school meals, personal protective equipment (PPE) and temporary staff.</span>
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <span class="manual-list--title">Books and educational resources</span><br>
+          <span class="manual-list--description">Negotiate with suppliers to save money and make the most of their services.</span>
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <span class="manual-list--title">Catering services</span><br>
+          <span class="manual-list--description">How to find the best solution for the catering requirements of your school.</span>
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <span class="manual-list--title">Cleaning services</span><br>
+          <span class="manual-list--description">How to find the right cleaning solutions for your school or multi-academy trust.</span>
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <span class="manual-list--title">Consultancy: educational services, and design and build</span><br>
+          <span class="manual-list--description">How schools can buy consultancy services and use a DfE-recommended framework to get good value.</span>
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <span class="manual-list--title">Electricity</span><br>
+          <span class="manual-list--description">Find the right way to buy electricity for your school.</span>
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <span class="manual-list--title">Gas</span><br>
+          <span class="manual-list--description">Find the right way to buy gas for your school.</span>
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <span class="manual-list--title">Get help with buying for schools</span><br>
+          <span class="manual-list--description">Support for school business professionals.</span>
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <span class="manual-list--title">HR and payroll services</span><br>
+          <span class="manual-list--description">How to buy HR and payroll services and use a DfE-recommended framework to get good value.</span>
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <span class="manual-list--title">ICT and computer hardware</span><br>
+          <span class="manual-list--description">Find the right way to buy ICT or computer hardware for your school.</span>
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <span class="manual-list--title">Leasing equipment for schools</span><br>
+          <span class="manual-list--description">What to consider to ensure you get the best value for money and a compliant lease agreement for your school.</span>
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <span class="manual-list--title">Legal</span><br>
+          <span class="manual-list--description">How schools can evaluate the legal services they currently have, renegotiate fees and switch suppliers.</span>
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <span class="manual-list--title">Multi-functional devices (MFD) and printing</span><br>
+          <span class="manual-list--description">Find the right way to buy multi-functional devices (MFD) and printing services for your school.</span>
+        </a>
+      </li>
+    </ul>
+    <a hre="">Print this page</a>
+  </div>
+</div>
+
+
+{% endblock %}

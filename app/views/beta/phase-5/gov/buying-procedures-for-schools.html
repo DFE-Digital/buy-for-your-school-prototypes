@@ -1,0 +1,124 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Dashboard
+{% endblock %}
+
+{% block beforeContent %}
+  {{ govukPhaseBanner({
+    tag: {
+      text: "prototype"
+    },
+    html: 'This is not a real service.'
+  }) }}
+{% endblock %}
+
+
+
+{% block content %}
+
+<div class="govuk-grid-row manual-header">
+  <div class="govuk-grid-column-two-thirds">
+    <h1 class="govuk-heading-m">Buying producedures and procurement law for schools</h1>
+    <p>
+      From: <a href="">Department for Education</a><br>
+      Published 2 February 2016</br>
+      Updated: 11 June 2021, <a href="">see all updates</a>
+    </p>
+  </div>
+</div>
+
+<div class="govuk-grid-row" style="padding-left: 15px; padding-right: 15px">
+  <div class="govuk-grid-column-full-width">
+    {{ govukBreadcrumbs({
+      items: [
+        {
+          text: "Contents",
+          href: "#"
+        }
+      ]
+    }) }}
+    <hr>
+    <h2 class="govuk-heading-m">How to buy goods, works or services for your school.</h2>
+    <p>Following these guides will help schools to:</p>
+    <ul class='govuk-list govuk-list--bullet'>
+      <li>get value for money</li>
+      <li>comply with procurement law</li>
+    </ul>
+    <p>Read <a href="">buying for schools</a> for advice on the types of goods and services schools regularly buy, such as catering and ICT hardware.</p>
+    <p>On 31 December 2020, the <a href="">Find a Tender service</a> replaced Tenders Electronic Daily (TED) in the UK public procurement process. UK buyers who previously published OJEU notices on TED should now use the Find a Tender service. Notices published before this change are still on <a href="">TED.</a></p>
+
+    <ul class="manual-list">
+      <li>
+        <a href="">
+          <span class="manual-list--title">Before you start</span><br>
+          <span class="manual-list--description">How to prepare and research before buying things for your school to help you get the best deal and save money.</span>
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <span class="manual-list--title">Find the right way to buy</span><br>
+          <span class="manual-list--description">When to buy from a framework agreement, when to get bids or quotes and when to run an EU compliant buying process.</span>
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <span class="manual-list--title">Writing a specification</span><br>
+          <span class="manual-list--description">How to write a specification – the document you give to suppliers explaining what you want to buy.</span>
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <span class="manual-list--title">Select a supplier direct from a framework agreement</span><br>
+          <span class="manual-list--description">How schools can buy from a framework agreement where they’re allowed to select the supplier directly.</span>
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <span class="manual-list--title">Run a mini-competition</span><br>
+          <span class="manual-list--description">How schools can buy from a framework agreement where all suppliers can bid.</span>
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <span class="manual-list--title">Buying low to medium cost things</span><br>
+          <span class="manual-list--description">How schools can buy low or medium value things by researching suppliers and getting at least 3 quotes.</span>
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <span class="manual-list--title">Buying high-value things under the EU procurement threshold</span><br>
+          <span class="manual-list--description">How schools can buy high value things, including how to advertise a contract and run a procurement process.</span>
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <span class="manual-list--title">Buying things that are over the procurement threshold</span><br>
+          <span class="manual-list--description">How schools can buy high value things and comply with EU procurement rules, including advertising a contract and running a buying process.</span>
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <span class="manual-list--title">Writing contracts and managing a contract</span><br>
+          <span class="manual-list--description">What should be in a school's contract with their supplier, and how they should manage them throughout the buying process.</span>
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <span class="manual-list--title">Fraud</span><br>
+          <span class="manual-list--description">How to avoid fraud and what to do if you suspect it.</span>
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <span class="manual-list--title">How to manage your fixed assets</span><br>
+          <span class="manual-list--description">Keeping a fixed asset register</span>
+        </a>
+      </li>
+    </ul>
+    <a hre="">Print this page</a>
+  </div>
+</div>
+
+
+{% endblock %}

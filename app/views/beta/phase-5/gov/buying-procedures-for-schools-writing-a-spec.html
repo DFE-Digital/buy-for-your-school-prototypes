@@ -1,0 +1,69 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Dashboard
+{% endblock %}
+
+{% block beforeContent %}
+  {{ govukPhaseBanner({
+    tag: {
+      text: "prototype"
+    },
+    html: 'This is not a real service.'
+  }) }}
+{% endblock %}
+
+
+
+{% block content %}
+
+<div class="govuk-grid-row manual-header">
+  <div class="govuk-grid-column-two-thirds">
+    <h1 class="govuk-heading-m">Buying producedures and procurement law for schools</h1>
+    <p>
+      From: <a href="">Department for Education</a><br>
+      Published 2 February 2016</br>
+      Updated: 11 June 2021, <a href="">see all updates</a>
+    </p>
+  </div>
+</div>
+
+<div class="govuk-grid-row" style="padding-left: 15px; padding-right: 15px">
+  <div class="govuk-grid-column-two-thirds">
+    {{ govukBreadcrumbs({
+      items: [
+        {
+          text: "Contents",
+          href: "#"
+        }
+      ]
+    }) }}
+    <hr>
+    <h2 class="govuk-heading-m">Writing a specification</p>
+    <h3 class="govuk-heading-s">How to write a specification – the document you give to suppliers explaining what you want to buy.</h3>
+    <p>No matter what procurement process you use, always write a specification describing what you want to buy. It helps to make decisions later and tells suppliers exactly what you need.</p>
+    <p>It may help to write a draft to use in your business case for buying something.</p>
+    <p>Before you write it:</p>
+    <ul class='govuk-list govuk-list--bullet'>
+      <li>talk to people who will use the thing you plan to buy – to make sure you get what they need</li>
+      <li>talk to people who will approve the purchase</li>
+      <li>talk to suppliers – to get an idea of prices and what’s available</li>
+      <li>think about whether you need expert help with writing your specification or the whole buying process</li>
+    </ul>
+    <p>Your specification should include:</p>
+    <ul class='govuk-list govuk-list--bullet'>
+      <li>a precise description of what you need</li>
+      <li>an explanation of what it should do, if needed</li>
+      <li>the amount you need</li>
+      <li>what quality it should be</li>
+      <li>when you need it</li>
+    </ul>
+    <p>Think about what is essential, what would be nice to have and what you will need in 1 or 2 years time.</p>
+    <p>Check you have included everything you need. If you miss something out it may cost more once you have a supplier, as there will no longer be other people competing to supply it cheaper.</p>
+    <p>If you cannot work out all the things you need to know for your specification there may still be other ways to buy, but you should get expert advice.</p>
+    <a hre="">Print this page</a>
+  </div>
+</div>
+
+
+{% endblock %}

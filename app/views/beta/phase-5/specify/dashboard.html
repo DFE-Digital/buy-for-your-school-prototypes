@@ -1,0 +1,71 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Dashboard
+{% endblock %}
+
+{% block beforeContent %}
+  {{ govukPhaseBanner({
+    tag: {
+      text: "prototype"
+    },
+    html: 'This is not a real service.'
+  }) }}
+{% endblock %}
+
+{% block content %}
+  {{ govukBackLink({
+    text: "Back",
+    href: "../../../index"
+  }) }}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-xl">Specifications dashboard</h1>
+        <p><a href="create-specification" class="govuk-button">Create a new specification</a></p>
+        <h2 class="govuk-heading-m">Existing specification</h2>
+        <p>Continue with a draft specification, and review completed specifications.</p>
+
+        {{ govukTable({
+          firstCellIsHeader: false,
+          head: [
+            {
+              text: "Date started"
+            },
+            {
+              text: ""
+            }
+          ],
+          rows: [
+            
+            [
+              {
+                text: "2 Oct 2020"
+              },
+              {
+                format: "govuk-table__cell--numeric",
+                html: "<a href=''>Review and edit</a>"
+              }
+            ],
+            [
+              {
+                text: "10 Sept 2020"
+              },
+              {
+                format: "govuk-table__cell--numeric",
+                html: "<a href=''>Review and edit</a>"
+              }
+            ],
+            [
+              {
+                text: "9 Sept 2020"
+              },
+              {
+                format: "govuk-table__cell--numeric",
+                html: "<a href=''>Review and edit</a>"
+              }
+            ]
+          ]
+        }) }}
+    </div>
+  </div>
+{% endblock %}
