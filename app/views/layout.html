@@ -47,30 +47,17 @@
     containerClasses: "govuk-width-container"
   }) }}
 {% endblock %}
-
+{#
 {% block beforeContent %}
   {{ govukPhaseBanner({
     tag: { text: "beta" },
     html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.'
   }) }}
 {% endblock %}
-
+#}
 {% set mainClasses = mainClasses | default("govuk-main-wrapper--auto-spacing") %}
 
 {% if useAutoStoreData %}
-{% set prototypeDataHtml %}
-{% for i,v in data %}
-<span class="govuk-!-font-size-14"><b>{{i}}</b>: {{v}}</span><br>
-{% endfor %}
-{% endset %}
-
-{% set prototypeData %}
-{{ govukDetails({
-  summaryText: "Prototype data",
-  text: prototypeDataHtml | safe,
-  classes: "govuk-!-font-size-16"
-}) }}
-{% endset %}
   {% block footer %}
     {{ govukFooter({
       meta: {
@@ -83,8 +70,7 @@
             href: "/prototype-admin/clear-data",
             text: "Clear data"
           }
-        ],
-        text: prototypeData | safe
+        ]
       }
     }) }}
   {% endblock %}
