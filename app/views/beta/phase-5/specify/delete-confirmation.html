@@ -5,12 +5,6 @@
 {% endblock %}
 
 {% block beforeContent %}
-{#
-  {{ govukPhaseBanner({
-        tag: { text: "beta" },
-        html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.'
-  }) }}
-#}
   {{ govukPhaseBanner({
     tag: {
       text: "prototype"
@@ -29,14 +23,6 @@
       }
     ]
   }) }}
-{#
-<mark>do we even need a backlink</mark>
-<br>
-{{ govukBackLink({
-        text: "Back to dashboard",
-        href: "dashboard"
-      }) }}
-      #}
 {% endblock %}
 
 {% block content %}

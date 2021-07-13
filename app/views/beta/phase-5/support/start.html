@@ -1,0 +1,59 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Start page
+{% endblock %}
+
+{% block header %}
+  <!-- Blank header with no service name for the start page -->
+  {{ govukHeader() }}
+{% endblock %}
+
+{% block beforeContent %}
+{{ govukPhaseBanner({
+  tag: {
+    text: "prototype"
+  },
+  html: 'This is not a real service.'
+}) }}
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">Supported buying for schools</h1>
+
+            <p>Request free advice and support from our procurement experts for help with your catering or multi-functional devices specification.</p>
+
+
+            <p class="govuk-body">Use this service to request:</p>
+
+            <ul class="govuk-list govuk-list--bullet">
+              <li>advice or guidance for your specification</li>
+              <li>advice about frameworks and how to use one</li>
+              <li>help with running a framework</li>
+            </ul>
+
+            <p class="govuk-body">We will respond to you within 5 working days.</p>
+
+            <a href="dashboard" role="button" draggable="false" class="govuk-button govuk-button--start govuk-!-margin-top-2 govuk-!-margin-bottom-8"  data-module="govuk-button">
+              Start
+              <svg class="govuk-button__start-icon" xmlns="http://www.w3.org/2000/svg" width="17.5" height="19" viewBox="0 0 33 40" role="presentation" focusable="false">
+                <path fill="currentColor" d="M0 0h13l20 20-20 20H0l20-20z"></path>
+              </svg>
+            </a>
+
+            <h2 class="govuk-heading-m">Before you start</h2>
+
+            <p class="govuk-body">You can:</p>
+
+            <ul class="govuk-list govuk-list--bullet">
+              <li><a href="">read about writing a specification</a></li>
+              <li>find out more about <a href="">planning for what you’re buying</a></li>
+              <li>read <a href="">information on finding the right way to buy</a> for your school.</li>
+              <li>see if you can buy what you need using a DfE recommended framework. Use our <a href="">find a framework service.</a></li>
+            </ul>
+    </div>
+  </div>
+{% endblock %}

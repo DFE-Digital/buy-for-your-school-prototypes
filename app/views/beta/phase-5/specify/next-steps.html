@@ -11,14 +11,22 @@
 
 {% block beforeContent %}
 {{ govukPhaseBanner({
-  tag: {
-    text: "prototype"
-  },
-  html: 'This is not a real service.'
-}) }}
-  {{ govukBackLink({
-    text: "Back",
-    href: "dashboard"
+    tag: {
+      text: "prototype"
+    },
+    html: 'This is not a real service.'
+  }) }}
+
+  {{ govukBreadcrumbs({
+    items: [
+      {
+        text: "Dashboard",
+        href: "dashboard"   
+      },
+      {
+        text: "Next steps"
+      }
+    ]
   }) }}
 {% endblock %}
 
@@ -28,25 +36,25 @@
 
       <h1 class="govuk-heading-xl">Next steps</h1>
 
-      <p class="govuk-body">Once you&rsquo;ve completed your specification, you can share it with suppliers.</p>
+      <p class="govuk-body">Once you've completed your specification, you can share it with suppliers.</p>
 
-      <p>Go directly to <a href="https://buy-for-your-school-staging.herokuapp.com/beta/phase-5/find-a-framework/matching-frameworks">catering frameworks recommended by DfE</a> via our find a framework tool (we&rsquo;ll prefill the questions for you).&nbsp;</p>
+      <p>Go directly to <a href="../find-a-framework/matching-frameworks">catering frameworks recommended by DfE</a> via our find a framework tool (we'll prefill the questions for you).</p>
       <p>Buying from a framework we recommend can be quicker and easier than running your own process. Each one has been assessed for compliance with procurement regulations, ease of use, suitability and value for money.</p>
-      <p><a href="https://www.gov.uk/guidance/buying-procedures-and-procurement-law-for-schools/find-the-right-way-to-buy">Read about frameworks and how to use one</a> if you haven&rsquo;t used one before.</p>
+      <p><a href="https://www.gov.uk/guidance/buying-procedures-and-procurement-law-for-schools/find-the-right-way-to-buy">Read about frameworks and how to use one</a> if you haven't used one before.</p>
       
       <h2 class="govuk-heading-m">Other procurement options</h2>
 
-      <p>If you&rsquo;re not able to use a framework, read our guidance to find out how to continue with your procurement if you want to:</p>
+      <p>If you're not able to use a framework, read our guidance to find out how to continue with your procurement if you want to:</p>
 
       <ul class="govuk-list govuk-list--bullet">
         <li><a href="https://www.gov.uk/guidance/buying-procedures-and-procurement-law-for-schools/buying-high-value-things-under-the-eu-procurement-threshold">buy high-value things <strong>under</strong> the procurement threshold</a></li>
         <li><a href="https://www.gov.uk/guidance/buying-procedures-and-procurement-law-for-schools/buying-things-that-are-over-the-eu-procurement-threshold">buy things <strong>over</strong> the procurement threshold</a></li>
-        <li><a href="https://www.gov.uk/guidance/buying-procedures-and-procurement-law-for-schools/buying-low-to-medium-cost-things">buy low to medium cost things</a> (up to &pound;40,000)</li>
+        <li><a href="https://www.gov.uk/guidance/buying-procedures-and-procurement-law-for-schools/buying-low-to-medium-cost-things">buy low to medium cost things</a> (up to £40,000)</li>
       </ul>
 
       <h2 class="govuk-heading-m">Get help and support</h2>
 
-      <p class="govuk-body">If you&rsquo;ve read the guidance and you still need help, <a href="https://buy-for-your-school-staging.herokuapp.com/beta/phase-5/gov/support-form">request free advice and support from our procurement experts.</p>
+      <p class="govuk-body">If you've read the guidance and you still need help, <a href="../support/start">request free advice and support from our procurement experts.</p>
 
     </div>
   </div>
