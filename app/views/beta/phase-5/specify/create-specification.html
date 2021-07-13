@@ -5,16 +5,31 @@
 {% endblock %}
 
 {% block beforeContent %}
-{{ govukPhaseBanner({
-  tag: {
-    text: "prototype"
-  },
-  html: 'This is not a real service.'
+  {{ govukPhaseBanner({
+    tag: {
+      text: "prototype"
+    },
+    html: 'This is not a real service.'
   }) }}
+
+
+  {{ govukBreadcrumbs({
+    items: [
+      {
+        text: "Dashboard",
+        href: "dashboard"
+      },
+      {
+        text: "Create a specification"
+      }
+    ]
+  }) }}
+{#
   {{ govukBackLink({
     text: "Back",
     href: "dashboard"
   }) }}
+#}
 {% endblock %}
 
 {% block content %}

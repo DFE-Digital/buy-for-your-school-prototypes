@@ -1,0 +1,85 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Dashboard
+{% endblock %}
+
+{% block beforeContent %}
+{#
+  {{ govukPhaseBanner({
+        tag: { text: "beta" },
+        html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.'
+  }) }}
+#}
+  {{ govukPhaseBanner({
+    tag: {
+      text: "prototype"
+    },
+    html: 'This is not a real service.'
+  }) }}
+
+  {{ govukBreadcrumbs({
+    items: [
+      {
+        text: "Dashboard",
+        href: "dashboard"   
+      },
+      {
+        text: "Delete confirmation"
+      }
+    ]
+  }) }}
+{#
+<mark>do we even need a backlink</mark>
+<br>
+{{ govukBackLink({
+        text: "Back to dashboard",
+        href: "dashboard"
+      }) }}
+      #}
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-three-quarters">
+      <h1 class="govuk-heading-l">Delete specification confirmed</h1>
+
+      {{ govukSummaryList({
+        classes: 'govuk-summary-list--no-border',
+        rows: [
+          {
+            key: {
+              text: "Specification"
+            },
+            value: {
+              text: "Oxford primary spec 234567890"
+            }
+          },
+          {
+            key: {
+              text: "Category"
+            },
+            value: {
+              text: "Catering"
+            }
+          },
+          {
+            key: {
+              text: "Date started"
+            },
+            value: {
+              html: "21 June 2021"
+            }
+          }
+        ]
+      }) }}
+
+      <p>Specification Oxford primary spec 234567890 was successfully deleted</p>
+      <p>If you did this in error you will need to <a href="">contact support</a></p>
+
+      <a class="govuk-button" href="dashboard">Continue to dashboard</a>
+
+    
+    </div>
+  </div>
+{% endblock %}

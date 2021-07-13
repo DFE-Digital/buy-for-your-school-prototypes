@@ -11,20 +11,27 @@
         html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.'
   }) }}
 #}
+  {{ govukPhaseBanner({
+    tag: {
+      text: "prototype"
+    },
+    html: 'This is not a real service.'
+  }) }}
 
   {{ govukBreadcrumbs({
-  items: [
-    {
-      text: "Home",
-      href: "#"
-    }
-  ]
-}) }}
-
+    items: [
+      {
+        text: "Dashboard",
+        href: "#"
+      }
+    ]
+  }) }}
+{#
 {{ govukBackLink({
         text: "Back",
         href: "../../../index"
       }) }}
+#}
 {% endblock %}
 
 {% block content %}
@@ -69,7 +76,7 @@
               },
               {
                 format: "govuk-table__cell--numeric",
-                html: "<a href=''>edit</a> - <a href=''>delete</a>"
+                html: "<a href=''>edit</a> - <a href='delete'>delete</a>"
               }
             ],
             [
@@ -84,7 +91,7 @@
               },
               {
                 format: "govuk-table__cell--numeric",
-                html: "<a href=''>edit</a> - <a href=''>delete</a>"
+                html: "<a href=''>edit</a> - <a href='delete'>delete</a>"
               }
             ],
             [
@@ -99,7 +106,7 @@
               },
               {
                 format: "govuk-table__cell--numeric",
-                html: "<a href=''>edit</a> - <a href=''>delete</a>"
+                html: "<a href=''>edit</a> - <a href='delete'>delete</a>"
               }
             ]
           ]
