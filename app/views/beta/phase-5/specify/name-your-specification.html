@@ -1,0 +1,43 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Create a new specification
+{% endblock %}
+
+{% block beforeContent %}
+{{ govukPhaseBanner({
+  tag: {
+    text: "prototype"
+  },
+  html: 'This is not a real service.'
+}) }}
+  {{ govukBackLink({
+    text: "Back",
+    href: " ../create-specification"
+  }) }}
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <form action="what-are-you-buying" method="POST">
+        {{ govukInput({
+          label: {
+            text: "Name your specification",
+            classes: "govuk-label--l",
+            isPageHeading: true
+          },
+          hint: {
+            text: "This will help you to identify it if you need to return to it later."
+          },
+          id: "specification-name",
+          name: "specification-name"
+        }) }}
+
+        {{ govukButton({
+          text: "Continue"
+        }) }}
+      </form>      
+    </div>
+  </div>
+{% endblock %}

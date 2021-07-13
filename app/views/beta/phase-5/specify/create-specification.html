@@ -37,9 +37,13 @@
     <div class="govuk-grid-column-three-quarters">
 
       <h1 class="govuk-heading-xl">
-        Create a specification to procure a catering service for your school
+        Create a specification to procure {{ data['category-type']}} for your school
       </h1>
 
+      <div class="govuk-inset-text">
+        <a href="choose-a-way-to-buy">Request free help and support with your specification</a>
+      </div>
+      
       <ol class="app-task-list sections">
     <h2 class="app-task-list__section">Catering procurement objectives</h2>
     <li>
@@ -48,9 +52,16 @@
                   <span class="app-task-list__task-name">
                     <a class="govuk-link" aria-describedby="b0fd7366-604f-4c03-b55a-f73e80a8e846-status" href="question/01-school-mission-statement">Add your school's mission statement</a>
                   </span>
-                  <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="b0fd7366-604f-4c03-b55a-f73e80a8e846-status">
-                    Not started
-                  </strong>
+
+                  {% if data['mission-statement'] == '' or data['mission-statement'] == null  %}
+                    <strong class="govuk-tag govuk-tag--grey app-task-list__tag">
+                      Not started
+                    </strong>
+                  {% else %}
+                    <strong class="govuk-tag govuk-tag--blue app-task-list__tag">
+                      Completed
+                    </strong>
+                  {% endif %}
               </li>
               <li class="app-task-list__item step__item" id="38d77efd-cd06-40eb-984c-70d9b3016970">
                   <span class="app-task-list__task-name">

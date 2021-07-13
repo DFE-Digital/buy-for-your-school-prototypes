@@ -1,0 +1,52 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Create a new specification
+{% endblock %}
+
+{% block beforeContent %}
+{{ govukPhaseBanner({
+  tag: {
+    text: "prototype"
+  },
+  html: 'This is not a real service.'
+}) }}
+  {{ govukBackLink({
+    text: "Back",
+    href: " ../create-specification"
+  }) }}
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <form action="create-specification" method="POST">
+        {{ govukRadios({
+          idPrefix: "category-type",
+          name: "category-type",
+          fieldset: {
+            legend: {
+              text: "What are you buying?",
+              isPageHeading: true,
+              classes: "govuk-fieldset__legend--l"
+            }
+          },
+          items: [
+            {
+              value: "a catering service",
+              text: "Catering service"
+            },
+            {
+              value: "multi-functional devices",
+              text: "Multi-functional devices - machines that can print, copy, scan and fax"
+            }
+          ]
+        }) }}
+
+        {{ govukButton({
+          text: "Continue"
+        }) }}
+      </form>      
+    </div>
+  </div>
+{% endblock %}
