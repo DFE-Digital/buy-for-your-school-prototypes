@@ -29,40 +29,17 @@
 
       <span class="govuk-caption-l">Choose a specification</span>
 
-      <form action="specification-request" method="post">
+      <form action="check-your-answers" method="post">
 
-      {{ govukRadios({
-        idPrefix: "specification-request",
-        name: "specification-request",
-        fieldset: {
-          legend: {
-            text: "Would you like to attach your specification?",
-            isPageHeading: true,
-            classes: "govuk-fieldset__legend--l"
+        {{ govukFileUpload({
+          id: "file-upload-1",
+          name: "file-upload-1",
+          label: {
+            text: "Upload your specification",
+            classes: "govuk-label--l",
+            isPageHeading: true
           }
-        },
-        hint: {
-            text: "Seeing a copy of your specification will help us to understand the problem and help you more quickly."
-          },
-        items: [
-          {
-            value: "choose-specification",
-            text: "Yes, I want to choose from a list"
-          },
-          {
-            value: "upload-specification",
-            text: "Yes, I want to upload my own copy"
-          },
-          {
-            value: "no-specification",
-            text: "No, I don't have a specification that relates to my query"
-          },
-          {
-            value: "no-specification",
-            text: "No, my request is not related to a specification "
-          }
-        ]
-      }) }}
+        }) }}
 
         {{ govukButton({
           text: "Continue"

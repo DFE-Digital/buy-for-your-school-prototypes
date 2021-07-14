@@ -466,9 +466,9 @@ router.post('/beta/phase-5/support/specification-request', function(req,res) {
   console.log('spec: ' + request)
 
   if (request == 'no-specification') {
-    res.redirect('beta/phase-5/support/check-your-answers')
+    res.redirect('/beta/phase-5/support/check-your-answers')
   } else {
-    res.redirect('beta/phase-5/support/' + request)
+    res.redirect('/beta/phase-5/support/' + request)
   }
 });
 

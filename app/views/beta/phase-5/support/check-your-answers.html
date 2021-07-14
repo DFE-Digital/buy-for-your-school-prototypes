@@ -26,13 +26,123 @@
 {% block content %}
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
-    <h1>Send your request</h1>
       <form action="confirmation" method="post">
-
-        
-
+        <h1 class="govuk-heading-l">Send your request</h1>
+        <h2 class="govuk-heading-m">About you</h2>
+        {{ govukSummaryList({
+          rows: [
+            {
+              key: {
+                text: "Name"
+              },
+              value: {
+                text: data['name']
+              },
+              actions: {
+                items: [
+                  {
+                    href: "enter-name",
+                    text: "Change",
+                    visuallyHiddenText: "name"
+                  }
+                ]
+              }
+            },
+            {
+              key: {
+                text: "Your phone number"
+              },
+              value: {
+                text: data['phone-number']
+              },
+              actions: {
+                items: [
+                  {
+                    href: "enter-phone-number",
+                    text: "Change",
+                    visuallyHiddenText: "date of birth"
+                  }
+                ]
+              }
+            },
+            {
+              key: {
+                text: "Your email address"
+              },
+              value: {
+                text: data['email-address']
+              },
+              actions: {
+                items: [
+                  {
+                    href: "enter-email-address",
+                    text: "Change",
+                    visuallyHiddenText: "contact information"
+                  }
+                ]
+              }
+            }
+          ]
+        }) }}
+        <h2 class="govuk-heading-m">About your request for support</h2>
+        {{ govukSummaryList({
+          rows: [
+            {
+              key: {
+                text: "Support request"
+              },
+              value: {
+                text: data['support-request']
+              },
+              actions: {
+                items: [
+                  {
+                    href: "enter-name",
+                    text: "Change",
+                    visuallyHiddenText: "name"
+                  }
+                ]
+              }
+            },
+            {
+              key: {
+                text: "Description of problem"
+              },
+              value: {
+                text: data['problem-description']
+              },
+              actions: {
+                items: [
+                  {
+                    href: "enter-problem-description",
+                    text: "Change",
+                    visuallyHiddenText: "date of birth"
+                  }
+                ]
+              }
+            },
+            {
+              key: {
+                text: "Attached specifications"
+              },
+              value: {
+                text: data['specification']
+              },
+              actions: {
+                items: [
+                  {
+                    href: "attach-your-specification",
+                    text: "Change",
+                    visuallyHiddenText: "contact information"
+                  }
+                ]
+              }
+            }
+          ]
+        }) }}
+        <p>Once you send this request, we will review it and get in touch within 5 working days.</p>
         {{ govukButton({
-          text: "Continue"
+          text: "Send request"
         }) }}
 
       </form>

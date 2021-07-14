@@ -29,37 +29,33 @@
 
       <span class="govuk-caption-l">Choose a specification</span>
 
-      <form action="specification-request" method="post">
+      <form action="check-your-answers" method="post">
 
-      {{ govukRadios({
-        idPrefix: "specification-request",
-        name: "specification-request",
+      {{ govukCheckboxes({
+        idPrefix: "specification",
+        name: "specification",
         fieldset: {
           legend: {
-            text: "Would you like to attach your specification?",
+            text: "Which of your specifications are related to this request?",
             isPageHeading: true,
             classes: "govuk-fieldset__legend--l"
           }
         },
         hint: {
-            text: "Seeing a copy of your specification will help us to understand the problem and help you more quickly."
-          },
+          text: "A copy of the specifications you choose will be sent to us with this request in its current state. We will not receive any new changes you make."
+        },
         items: [
           {
-            value: "choose-specification",
-            text: "Yes, I want to choose from a list"
+            value: "spec 123",
+            text: "spec 123"
           },
           {
-            value: "upload-specification",
-            text: "Yes, I want to upload my own copy"
+            value: "spec 456",
+            text: "spec 456"
           },
           {
-            value: "no-specification",
-            text: "No, I don't have a specification that relates to my query"
-          },
-          {
-            value: "no-specification",
-            text: "No, my request is not related to a specification "
+            value: "spec 789",
+            text: "spec 789"
           }
         ]
       }) }}
