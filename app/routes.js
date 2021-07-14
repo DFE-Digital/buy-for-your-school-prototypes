@@ -460,6 +460,18 @@ router.post("/contentful-test(/preview)?/answer", async (req, res) => {
 });
 
 
+router.post('/beta/phase-5/support/specification-request', function(req,res) {
+  console.log('specification-request');
+  let request = req.session.data['specification-request'];
+  console.log('spec: ' + request)
+
+  if (request == 'no-specification') {
+    res.redirect('beta/phase-5/support/check-your-answers')
+  } else {
+    res.redirect('beta/phase-5/support/' + request)
+  }
+});
+
 /*
 ============================================================================
 Pre-ordering branching
