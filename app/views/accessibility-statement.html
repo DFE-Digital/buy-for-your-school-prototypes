@@ -1,0 +1,59 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Dashboard
+{% endblock %}
+
+{% block beforeContent %}
+  {{ govukPhaseBanner({
+    tag: {
+      text: "prototype"
+    },
+    html: 'This is not a real service.'
+  }) }}
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <h1 class="govuk-heading-xl">Accessibility statement</h1>
+    
+    <h2 class="govuk-heading-m">How accessible this website is</h2>
+    <p>Get help buying for schools is a new service run by the Department for Education. We’re trialling it with a limited number of users at the moment.</p>
+    <p>We have taken steps to make this service accessible:</p>
+    <ul class='govuk-list govuk-list--bullet'>
+      <li>we designed it using the GOV.UK accessible design principles</li>
+      <li>we did an audit to see if there were any accessibility issues</li>
+      <li>we tested the design with users with accessibility needs</li>
+    </ul>
+    
+    <h2 class="govuk-heading-m">What to do if you cannot access parts of this website</h2>
+    <p>If you need information on this website in a different format, such as accessible PDF, large print, easy read, audio recording or braille, please email us on schools.digital@education.gov.uk.</p>
+    <p>We’ll consider your request and respond to you within 5 working days.</p>
+    <p>AbilityNet also has advice on making your device easier to use if you’re disabled.</p>
+    
+    <h2 class="govuk-heading-m">Reporting accessibility problems with this website</h2>
+    <p>If you have any problems accessing the service or want to give us feedback, please email us on schools.digital@education.gov.uk</p>
+    
+    <h2 class="govuk-heading-m">Enforcement procedure</h2>
+    <p>The Equality and Human Rights Commission (EHRC) is responsible for enforcing the Public Sector Bodies (Websites and Mobile Applications) (No. 2) Accessibility Regulations 2018 (the ‘accessibility regulations’).</p>
+    <p>If you’re not happy with how we respond to your complaint, please contact the quality Advisory and Support Service (EASS).</p>
+    
+    <h2 class="govuk-heading-m">Technical information about this website’s accessibility</h2>
+    <p>The Department for Education is committed to making its website services accessible, in accordance with the Public Sector Bodies (Websites and Mobile Applications) (No. 2) Accessibility Regulations 2018.</p>
+    <p>This website is compliant with the Web Content Accessibility Guidelines version 2.1 AA standard.</p>
+    
+    <h2 class="govuk-heading-m">What we’re doing to improve accessibility</h2>
+    <p>We’ll continue to test the accessibility of this service as it develops.</p>
+    {{ govukInsetText({
+      text: "This statement was prepared on 07 July 2021."
+    }) }}
+    <p  class="govuk-body-s">Last updated 15th July 2021</p>
+
+  </div>
+</div>
+
+
+
+{% endblock %}
