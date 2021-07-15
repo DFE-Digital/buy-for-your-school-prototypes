@@ -1,0 +1,50 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Start page
+{% endblock %}
+
+{% block header %}
+  <!-- Blank header with no service name for the start page -->
+  {{ govukHeader() }}
+{% endblock %}
+
+{% block beforeContent %}
+{{ govukPhaseBanner({
+  tag: {
+    text: "prototype"
+  },
+  html: 'This is not a real service.'
+}) }}
+
+{{ govukBackLink({
+  text: "Back",
+  href: "#"
+}) }}
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <form action="confirmation" method="post">        
+        {{ govukPanel({
+          titleText: "Your request for support has been sent",
+          html: "We have sent a confirmation email to: " + data['email']
+        }) }}
+
+        <h2 class="govuk-heading-m">What happens next</h2>
+        <p>The Schools Commercial team will be in touch within 5 working days to discuss how we can support you.</p>      
+        <h2 class="govuk-heading-m">What you can do next</h2>
+        <p>Continue with your specification if you can (but we won’t receive these new changes), or start a new one if you haven’t done so yet.</p>
+        <p>You can also:</p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li><a href="">read buying procedures and procurement law for schools</a> to learn more about the buying process</li>
+          <li><a href="">read guides about goods and services</a> that you’re buying</li>
+        </ul>
+
+        <mark>can they go anywhere else from here?</mark>
+
+      </form>
+    </div>
+  </div>
+{% endblock %}

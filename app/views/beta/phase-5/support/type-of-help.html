@@ -32,8 +32,8 @@
       <form action="enter-problem-description" method="post">
 
         {{ govukCheckboxes({
-          idPrefix: "waste",
-          name: "waste",
+          idPrefix: "support-request",
+          name: "support-request",
           fieldset: {
             legend: {
               text: "How can we support you with your specification?",
@@ -46,23 +46,23 @@
           },
           items: [
             {
-              value: "help",
+              value: "I need help with using the service",
               text: "I need help with using the service"
             },
             {
-              value: "problem",
+              value: "I have a problem with using this service",
               text: "I have a problem with using this service"
             },
             {
-              value: "advice",
+              value: "I need advice and guidance on what information to provide",
               text: "I need advice and guidance on what information to provide"
             },
             {
-              value: "clarification",
+              value: "I need clarification on something thing that is unclear",
               text: "I need clarification on something thing that is unclear"
             },
             {
-              value: "something else",
+              value: "Something else",
               text: "Something else"
             }
           ]

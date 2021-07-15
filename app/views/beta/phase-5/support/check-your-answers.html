@@ -28,12 +28,34 @@
     <div class="govuk-grid-column-two-thirds">
       <form action="confirmation" method="post">
         <h1 class="govuk-heading-l">Send your request</h1>
+        <h2 class="govuk-heading-m">About your school</h2>
+        {{ govukSummaryList({
+          rows: [
+            {
+              key: {
+                text: "Your school"
+              },
+              value: {
+                text: data['school']
+              },
+              actions: {
+                items: [
+                  {
+                    href: "enter-school-name",
+                    text: "Change",
+                    visuallyHiddenText: "name"
+                  }
+                ]
+              }
+            }
+          ]
+        }) }}
         <h2 class="govuk-heading-m">About you</h2>
         {{ govukSummaryList({
           rows: [
             {
               key: {
-                text: "Name"
+                text: "Your name"
               },
               value: {
                 text: data['name']
